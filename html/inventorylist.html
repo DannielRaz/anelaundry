@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laundry List</title>
-    <link rel="stylesheet" href="laundrylist.css">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="../css/inventorylist.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <!-- Sidebar -->
     <div class="sidebar">
         <h2>AN'E Laundry</h2>
-        <img src="ane-laundry-logo.png" alt="AN'E Laundry Logo" class="sidebar-logo"> 
+        <img src="../img/ane-laundry-logo.png" alt="AN'E Laundry Logo" class="sidebar-logo"> 
         <ul>
             <li><a href="maindashboard.html">Dashboard</a></li>
             <li><a href="inventorylist.html">Inventory</a></li>
@@ -27,38 +27,36 @@
         <header>
             <div class="header-info">
                 <div class="user-profile">
-                    <img src="avatar.png" alt="User Avatar" class="user-avatar">
+                    <img src="../img/avatar.png" alt="User Avatar" class="user-avatar">
                     <span class="user-name">User</span>
+                   
                     <div class="dropdown">
-                        <ul>
-                
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
         </header>
 
-        <!-- Laundry List Section -->
-        <div class="laundry-list-header">
-            <h2>Laundries</h2>
-            <button class="print-btn">Print Receipt</button>
-            <button class="add-laundry-btn">+ Add Laundry</button>
+        <!-- Inventory List Header Section -->
+        <div class="inventory-list-header">
+            <h2>Inventory</h2>
+            <button class="print-btn">Print Report</button>
+            <button class="add-inventory-btn">+ Add Stock</button>
         </div>
 
         <!-- Search Bar -->
-        <input type="text" id="search" placeholder="Search order ID">
+        <input type="text" id="search" placeholder="Search by Product ID">
 
-        <!-- Laundry List Table -->
+        <!-- Inventory List Table -->
         <table>
             <thead>
                 <tr>
                     <th>Select</th>
-                    <th>Order ID</th>
-                    <th>Date</th>
-                    <th>Customer</th>
-                    <th>Sales Channel</th>
-                    <th>Destination</th>
-                    <th>Items</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Type</th>
+                    <th>Current Stock</th>
+                    <th>Reorder Level</th>
                     <th>Status</th>
                 </tr>
             </thead>
@@ -66,22 +64,29 @@
                 <tr>
                     <td><input type="checkbox"></td>
                     <td>#7676</td>
-                    <td>06/30/2022</td>
-                    <td>Ramesh Chaudhary</td>
-                    <td>Store name</td>
-                    <td>Lalitpur</td>
-                    <td>3</td>
-                    <td><span class="status completed">Completed</span></td>
+                    <td>Tide</td>
+                    <td>Detergent</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td><span class="status high">High</span></td>
                 </tr>
                 <tr>
                     <td><input type="checkbox"></td>
                     <td>#7677</td>
-                    <td>06/30/2022</td>
-                    <td>Ramesh Chaudhary</td>
-                    <td>Store name</td>
-                    <td>Lalitpur</td>
-                    <td>3</td>
-                    <td><span class="status pending">Pending</span></td>
+                    <td>Ariel</td>
+                    <td>Detergent</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td><span class="status medium">Medium</span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#7678</td>
+                    <td>Downy SF</td>
+                    <td>Fabric Detergent</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td><span class="status low">Low</span></td>
                 </tr>
             </tbody>
         </table>
