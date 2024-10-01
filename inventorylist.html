@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory</title>
+    <link rel="stylesheet" href="inventorylist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>AN'E Laundry</h2>
+        <img src="ane-laundry-logo.png" alt="AN'E Laundry Logo" class="sidebar-logo"> 
+        <ul>
+            <li><a href="maindashboard.html">Dashboard</a></li>
+            <li><a href="inventorylist.html">Inventory</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="laundryreceipt.html">Laundries Receipt</a></li>
+            <li><a href="laundrylist.html">Laundries List</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <header>
+            <div class="header-info">
+                <div class="user-profile">
+                    <img src="avatar.png" alt="User Avatar" class="user-avatar">
+                    <span class="user-name">User</span>
+                   
+                    <div class="dropdown">
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Inventory List Header Section -->
+        <div class="inventory-list-header">
+            <h2>Inventory</h2>
+            <button class="print-btn">Print Report</button>
+            <button class="add-inventory-btn">+ Add Stock</button>
+        </div>
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search by Product ID">
+
+        <!-- Inventory List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Product ID</th>
+                    <th>Product Name</th>
+                    <th>Type</th>
+                    <th>Current Stock</th>
+                    <th>Reorder Level</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#7676</td>
+                    <td>Tide</td>
+                    <td>Detergent</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td><span class="status high">High</span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#7677</td>
+                    <td>Ariel</td>
+                    <td>Detergent</td>
+                    <td>20</td>
+                    <td>15</td>
+                    <td><span class="status medium">Medium</span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#7678</td>
+                    <td>Downy SF</td>
+                    <td>Fabric Detergent</td>
+                    <td>5</td>
+                    <td>10</td>
+                    <td><span class="status low">Low</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

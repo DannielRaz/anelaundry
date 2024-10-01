@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AN'E Laundry Dashboard</title>
+  <link rel="stylesheet" href="maindashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>AN'E Laundry</h2>
+    <img src="ane-laundry-logo.png" alt="AN'E Laundry Logo" class="sidebar-logo"> 
+    <ul>
+      <li><a href="maindashboard.html">Dashboard</a></li>
+      <li><a href="inventorylist.html">Inventory</a></li>
+      <li><a href="#">Sales</a></li>
+      <li><a href="laundryreceipt.html">Laundries Receipt</a></li>
+      <li><a href="laundrylist.html">Laundries List</a></li>
+      <li><a href="login.html">Log Out</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <header>
+        <div class="header-info">
+          <div class="user-profile">
+            <img src="avatar.png" alt="User Avatar" class="user-avatar"> <!-- Placeholder for user icon -->
+            <span class="user-name">User</span>
+            
+            <div class="dropdown">
+              
+            </div>
+          </div>
+        </div>
+      </header>
+
+    <!-- Cards for Revenue, Sales Return, Purchase, Income -->
+    <div class="cards">
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>+ 30,000</p>
+      </div>
+      <div class="card">
+        <h3>Sales Return</h3>
+        <p>+ 30,000</p>
+      </div>
+      <div class="card">
+        <h3>Purchase</h3>
+        <p>+ 30,000</p>
+      </div>
+      <div class="card">
+        <h3>Income</h3>
+        <p>+ 30,000</p>
+      </div>
+    </div>
+
+    <!-- Chart and Tables -->
+    <div class="charts">
+      <div class="bar-chart">
+        <!-- Placeholder for Bar Chart -->
+        <canvas id="barChart"></canvas>
+      </div>
+      <div class="top-products">
+        <h3>Top Selling Products</h3>
+        <!-- Placeholder for Pie Chart -->
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+
+    <!-- Stock Alert and Top Selling Products Tables -->
+    <div class="tables">
+      <div class="table">
+        <h3>Stock Alert</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Date</th>
+              <th>Quantity</th>
+              <th>Alert Amt.</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>12345</td>
+              <td>2023-09-10</td>
+              <td>50</td>
+              <td>20</td>
+              <td>Low</td>
+            </tr>
+            <!-- More rows here -->
+          </tbody>
+        </table>
+      </div>
+      <div class="table">
+        <h3>Top Selling Products</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Quantity</th>
+              <th>Alert Amt.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>54321</td>
+              <td>100</td>
+              <td>50</td>
+              <td>Low</td>
+            </tr>
+    
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Chart.js Library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom JavaScript for charts -->
+  <script src="maindashboard.js"></script>
+</body>
+</html>
