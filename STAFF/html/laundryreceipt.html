@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Receipt</title>
+    <link rel="stylesheet" href="../css/laundryreceipt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>AN'E Laundry</h2>
+        <img src="../img/ane-laundry-logo.png" alt="AN'E Laundry Logo" class="sidebar-logo">
+        <ul>
+            <li><a href="maindashboard.html">Dashboard</a></li>
+            <li><a href="inventorylist.html">Inventory</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="laundryreceipt.html">Laundries Receipt</a></li>
+            <li><a href="laundrylist.html">Laundries List</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <header>
+            <div class="header-info">
+                <div class="user-profile">
+                    <img src="../img/avatar.png" alt="User Avatar" class="user-avatar">
+                    <span class="user-name">User</span>
+                    <div class="dropdown"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Forms Container -->
+        <div class="form-container">
+            <!-- Left Form -->
+            <div class="laundry-form">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter your name">
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+                    <label for="load">Load</label>
+                    <input type="text" id="load" placeholder="Load (kg)">
+                    <h3>Category of Service</h3>
+                    <div class="options">
+                        <label><input type="checkbox" name="article" value="wash-dry-fold"> Wash-Dry-Fold </label>
+                        <label><input type="checkbox" name="article" value="wash only"> Wash Only</label>
+                        <label><input type="checkbox" name="article" value="dry only"> Dry Only</label>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle Form -->
+            <div class="article-form">
+                <div class="form-section">
+                    <h3>Article</h3>
+                    <div class="options">
+                        <label><input type="checkbox" name="article" value="clothes"> Clothes </label>
+                        <input type="text" id="clothes-kg" placeholder="Clothes (kg)">
+                        <label><input type="checkbox" name="article" value="comforter_single"> Comforter Single (pieces)</label>
+                        <input type="text" id="comforter-single" placeholder="Comforter Single (pieces)">
+                        <label><input type="checkbox" name="article" value="comforter_double"> Comforter Double (pieces)</label>
+                        <input type="text" id="comforter-double" placeholder="Comforter Double (pieces)">
+                        <label><input type="checkbox" name="article" value="bed_sheets"> Bedsheet/Curtains/Towel (kg)</label>
+                        <input type="text" id="bed-sheets" placeholder="Bedsheet/Curtains/Towel (kg)">
+                        <label><input type="checkbox" name="article" value="others"> Others (specify)</label>
+                        <input type="text" id="others" placeholder="Others (specify)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Form -->
+            <div class="FabricandDetergent-form">
+                <div class="form-section">
+                    <h3>Detergent</h3>
+                    <div class="options">
+                        <label><input type="checkbox" name="detergent" value="tide"> Tide</label>
+                        <label><input type="checkbox" name="detergent" value="ariel"> Ariel</label>
+                    </div>
+
+                    <h3>Fabric Detergent</h3>
+                    <div class="options">
+                        <label><input type="checkbox" name="softener" value="downy_jf"> Downy JF</label>
+                        <label><input type="checkbox" name="softener" value="downy_sf"> Downy SF</label>
+                        <label><input type="checkbox" name="softener" value="downy_gb"> Downy GB</label>
+                    </div>
+                </div>
+                <h3>Total</h3>
+                <p class="total">₱ 0.00</p>
+                <button class="submit-btn" onclick="calculateTotal()">Done</button>
+            </div>
+        </div>
+    </div>
+    <!-- Dark Mode JavaScript -->
+    <script src="../js/darkmode.js"></script>
+    <script>
+        function calculateTotal() {
+            alert("Total calculation to be implemented.");
+        }
+    </script>
+</body>
+</html>

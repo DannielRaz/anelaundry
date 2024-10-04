@@ -10,7 +10,18 @@ body {
   display: flex;
 }
 
-/* Sidebar */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .card h3,
+body.dark-mode .card  {
+    color: #000000; /* Light text color for headings and inputs */
+}
+.dark-mode .user-name  {
+  color: #ffffff;
+}
 /* Sidebar */
 .sidebar {
   background-color: #1A1A40;
@@ -23,24 +34,23 @@ body {
   left: 0;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
+
 .sidebar-logo {
   width: 180px;
   height: 180px;
-  border-radius: 50%; /* Make it circular */
-  margin: 20px 0; /* Add some space above and below the logo */
-  display: block; /* Ensure it displays as a block element */
-  object-fit: cover; /* Maintain aspect ratio and cover the circle */
-  margin-left: px;
+  border-radius: 50%;
+  margin: 20px 0;
+  display: block;
+  object-fit: cover;
 }
 
-
 .sidebar h2 {
-  font-size: 24px; /* Make the title slightly larger */
+  font-size: 24px;
   font-weight: bold;
-  text-align: center; /* Center the text */
-  margin-bottom: 30px; /* Adjust spacing */
+  text-align: center;
+  margin-bottom: 30px;
   color: #fff;
 }
 
@@ -65,43 +75,42 @@ body {
 }
 
 .sidebar ul li a:hover {
-  background-color: #FF6F61; /* Highlight with a bright color on hover */
+  background-color: #FF6F61;
   color: #fff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add a hover shadow */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar ul li a:active {
-  background-color: #e0564b; /* Slightly darker on click */
+  background-color: #e0564b;
 }
 
 .sidebar ul li a i {
-  margin-right: 10px; /* Space for any icons (if added) */
+  margin-right: 10px;
 }
 
 /* Sidebar Scroll */
 .sidebar {
-  overflow-y: auto; /* Enables scrolling if sidebar content exceeds screen height */
+  overflow-y: auto;
 }
 
 /* Optional: Add subtle sidebar separator for each section */
 .sidebar hr {
   border: 0;
   height: 1px;
-  background: rgba(255, 255, 255, 0.3); /* Subtle line separator */
+  background: rgba(255, 255, 255, 0.3);
   margin: 20px 0;
 }
-
 
 /* Main Content */
 .main-content {
   width: 100%;
   padding: 20px;
-  margin-left: 220px; /* Adjusted margin to account for wider sidebar */
+  margin-left: 220px;
 }
 
 .header-info {
   display: flex;
-  justify-content: flex-end; /* This will align the user profile to the right */
+  justify-content: flex-end;
   margin-bottom: 20px;
 }
 
@@ -129,14 +138,9 @@ body {
 /* Username and Dropdown Arrow */
 .user-name {
   font-size: 14px;
-  color: #2c3e50;
+  color: #000000;
   font-weight: bold;
   margin-right: 5px;
-}
-
-.user-profile i {
-  font-size: 12px;
-  color: #2c3e50;
 }
 
 /* Dropdown Menu */
@@ -173,7 +177,6 @@ body {
   display: block;
 }
 
-
 /* Cards */
 .cards {
   display: flex;
@@ -192,6 +195,12 @@ body {
   margin-bottom: 10px;
 }
 
+/* Dark Mode for Cards */
+.card.dark-mode {
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+}
+
 /* Charts */
 .charts {
   display: flex;
@@ -201,20 +210,27 @@ body {
 
 /* Adjust the size of the bar chart container */
 .bar-chart {
-  width: 60%; /* Adjust width as needed */
-  height: 300px; /* Set height */
+  width: 60%;
+  height: 300px;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
 }
 
 /* Adjust the size of the pie chart container */
-.top-products {
-  width: 35%; /* Adjust width as needed */
-  height: 300px; /* Set height */
+.top-used {
+  width: 35%;
+  height: 300px;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 10px;
+  color: #000;
+}
+
+/* Dark Mode for Top Used Section */
+.top-used.dark-mode {
+  background-color: #2a2a2a;
+  color: #ffffff;
 }
 
 /* Tables */
@@ -237,11 +253,19 @@ table {
   border-collapse: collapse;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px solid #ccc;
 }
 
-th, td {
+th,
+td {
   padding: 10px;
   text-align: left;
+}
+
+/* Dark Mode for Tables */
+.table.dark-mode {
+  background-color: #2a2a2a;
 }
