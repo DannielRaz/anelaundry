@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry List</title>
+    <link rel="stylesheet" href="../css/laundrylist.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>AN'E Laundry</h2>
+        <img src="../img/ane-laundry-logo.png" alt="AN'E Laundry Logo" class="sidebar-logo"> 
+        <ul>
+            <li><a href="maindashboard.html">Dashboard</a></li>
+            <li><a href="inventorylist.html">Inventory</a></li>
+            <li><a href="#">Sales</a></li>
+            <li><a href="laundrylist.html">Laundries List</a></li>
+            <li><a href="manageuser.html">Manage User</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <header>
+            <div class="header-info">
+                <div class="user-profile">
+                    <img src="../img/avatar.png" alt="User Avatar" class="user-avatar">
+                    <span class="user-name">Admin</span>
+                    <div class="dropdown">
+
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Laundry List Section -->
+        <div class="laundry-list-header">
+            <h2>Laundries</h2>
+            <button class="print-btn">Print Receipt</button>
+            <button class="add-laundry-btn">+ Add Laundry</button>
+        </div>
+
+        <!-- Search Bar -->
+        <input type="text" id="search" placeholder="Search order ID">
+
+        <!-- Laundry List Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Select</th>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Customer</th>
+                    <th>Sales Channel</th>
+                    <th>Destination</th>
+                    <th>Items</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#7676</td>
+                    <td>06/30/2022</td>
+                    <td>Ramesh Chaudhary</td>
+                    <td>Store name</td>
+                    <td>Lalitpur</td>
+                    <td>3</td>
+                    <td><span class="status completed">Completed</span></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>#7677</td>
+                    <td>06/30/2022</td>
+                    <td>Ramesh Chaudhary</td>
+                    <td>Store name</td>
+                    <td>Lalitpur</td>
+                    <td>3</td>
+                    <td><span class="status pending">Pending</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Custom JavaScript for charts -->
+    <script src="../js/laundrylist.js"></script>
+    <!-- Dark Mode JavaScript -->
+    <script src="../js/darkmode.js"></script>
+</body>
+</html>
