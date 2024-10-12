@@ -1,0 +1,204 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    position: relative;
+}
+
+/* Dark Mode for Main Content and Sidebar */
+body.dark-mode {
+    background-color: #121212; /* Dark background for the entire body */
+    color: #ffffff; /* Light text color for the entire body */
+}
+
+body.dark-mode .main-content {
+    background-color: transparent; /* Transparent background for main content */
+}
+
+body.dark-mode h2,
+body.dark-mode input,
+body.dark-mode button,
+body.dark-mode table th,
+body.dark-mode table td {
+    color: #ffffff; /* Light text color for headings and inputs */
+}
+.dark-mode .user-name  {
+    color: #ffffff;
+  }
+
+/* Sidebar */
+.sidebar {
+    background-color: #1A1A40; /* Keep original sidebar color */
+    color: white;
+    height: 100vh;
+    width: 220px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.sidebar h2 {
+    font-size: 24px; /* Make the title slightly larger */
+    font-weight: bold;
+    text-align: center; /* Center the text */
+    margin-bottom: 30px; /* Adjust spacing */
+    color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    background-color: #FF6F61; /* Highlight with a bright color on hover */
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Add a hover shadow */
+}
+
+.sidebar-logo {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%; /* Make it circular */
+    margin: 20px 0; /* Add some space above and below the logo */
+    display: block; /* Ensure it displays as a block element */
+    object-fit: cover; /* Maintain aspect ratio and cover the circle */
+}
+
+/* Main Content */
+.main-content {
+    width: calc(100% - 220px);
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Default background color for main content */
+}
+
+/* Header */
+.header-info {
+    position: fixed;  
+    top: 0;
+    right: 20px;
+    padding: 10px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+/* User Profile Section */
+.user-profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Avatar Image */
+.user-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+.user-name {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Inventory List Header */
+.inventory-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.print-btn, .add-inventory-btn {
+    padding: 10px 15px;
+    background-color: #1A1A40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.print-btn:hover, .add-inventory-btn:hover {
+    background-color: #333366;
+}
+
+/* Search Bar */
+#search {
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table th {
+    background-color: #1A1A40;
+    color: white;
+}
+
+/* Status Styles */
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.status.high {
+    background-color: #28a745;
+    color: white;
+}
+
+.status.medium {
+    background-color: #ffc107;
+    color: white;
+}
+
+.status.low {
+    background-color: #dc3545;
+    color: white;
+}
